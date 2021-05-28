@@ -1,22 +1,45 @@
-.header{
-    text-align: center;
-    font-size: 48px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: aqua;
-}
-
-.cardcard{
-    max-width: 20%;
-    max-height: 10%;
-    padding-bottom: 120px;
+.movie{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 60px;
     
 }
-.imaggee{
-    margin: 5%;
+.form-control{
+    width: 250px;
+    margin-left: 90px;
+    margin-top: 50px;
 }
-.searchFilter{
-    max-width: 400px;
-    max-height: 100px;
-    padding-left: 135px;
-    padding-bottom: 25px;
+.inputtt{
+    width: 300px;
+
 }
+
+.star{
+    float:right;
+    margin-right: 25px;
+}
+.buttonra{
+    margin-top: 10px;
+    text-align: center;
+}
+.position{
+    width: 10px;
+}
+.free{
+    text-align: center;
+    color: blanchedalmond;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 60px;
+    font-style: italic;
+    text-decoration-line: underline;
+}
+.App{
+    background-color: black;
+
+}
+html{
+    background-color: black;
+}
+
+

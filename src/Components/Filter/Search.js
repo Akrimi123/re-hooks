@@ -1,16 +1,15 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-const Search = ({props}) => {
-	return (
-		<div className='searchFilter'>
-			<input
-				className='form-control'
-				value={props.value}
-				onChange={(event) => props(event.target.value)}
-				placeholder='Type to search...'
-			></input>
-		</div>
-	);
-};
-
-export default Search;
+    const search = ({handleSearch}) => {
+    return (
+        <div>
+            
+            <input className="form-control" 
+            type="text"
+            placeholder="Filter By Title"
+            onChange={e=>handleSearch(e.target.value)}/>
+            
+        </div>
+    )
+}
+export default search;

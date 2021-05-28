@@ -1,29 +1,21 @@
 import React from 'react'
-import {Card,Button} from 'react-bootstrap'
+import ReactStars from 'react-rating-stars-component'
+import {Card} from 'react-bootstrap'
 
-const MovieCard = ({el}) => {
+
+const Moviecard = ({title,description,posterurl,rating}) => {
     return (
-        <div className="cardcard">
-            <Card >
-                <Card.Img className="imaggee" variant="top" src={el.poster}   />
-                    <Card.Body>
-                        <Card.Title>{el.Title}</Card.Title>
-                        <Card.Text>{el.Description}</Card.Text>
-                            
-                        
-                    </Card.Body>
-                        <Card.Footer>
-                            <Button variant="primary">{el.Rating}</Button>
-                        </Card.Footer>
-            </Card>
+        <div className="cardmovies">
+            <Card style={{ width: '25rem', height :'50rem' ,backgroundColor:'green', marginTop:'90px', borderRadius:'30px' }}>
+                <Card.Img  variant="top" src={posterurl}  style={{width:'18 rem',height:'50 rem' ,borderRadius:'30px'}}/>
+            <Card.Body>
+                <Card.Title>{title}</Card.Title>
+                <Card.Text>{description}</Card.Text>
+                <ReactStars count={5} onChange={rating} size={24} activeColor="#ffd700" value={rating} edit={false}/>
+            </Card.Body>
+</Card>
         </div>
     )
 }
 
-export default MovieCard
-
-
-
-
-
-
+export default Moviecard;
