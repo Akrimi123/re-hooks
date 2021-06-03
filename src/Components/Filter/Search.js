@@ -9,6 +9,7 @@ import React from 'react';
             placeholder="Filter By Title"
             onChange={e=>handleSearch(e.target.value)}/>
             
+            
         </div>
     )
 }
